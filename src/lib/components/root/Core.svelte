@@ -8,7 +8,7 @@
 		<div class="grid gap-6 md:grid-cols-2">
 			<div class="rounded-lg border border-gray-200 p-6 transition hover:border-dark">
 				<Star class="mb-3 text-gray-600" size={24} />
-				<h3 class="mb-2 text-lg font-semibold">Interest > streaks</h3>
+				<h3 class="mb-2 text-xl font-semibold">Interest > streaks</h3>
 				<p class="text-sm text-gray-600">Follow genuine interest, not arbitrary goals.</p>
 			</div>
 			<div class="rounded-lg border border-gray-200 p-6 transition hover:border-dark">
