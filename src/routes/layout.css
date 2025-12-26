@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+	font-family: 'Stardock';
+	src: url('../lib/assets/fonts/Stardock.ttf') format('truetype');
+}
+@theme {
+	--color-dark: #171717;
+	--color-light: #faf9f6;
+	--font-stardock: 'Stardock';
+}
+body {
+	font-family: 'Michroma', sans-serif;
+}
+
+.fade-in {
+	opacity: 0;
+	transform: translateY(20px);
+	transition:
+		opacity 0.6s ease-out,
+		transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.delay-1 {
+	transition-delay: 0.1s;
+}
+
+.delay-2 {
+	transition-delay: 0.2s;
+}
+
+.delay-3 {
+	transition-delay: 0.3s;
+}
+
+button {
+	cursor: pointer;
+}
+.loader {
+	width: 16px;
+	height: 16px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-top-color: #fff;
+	border-radius: 50%;
+	animation: spin 0.6s linear infinite;
+}
