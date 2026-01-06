@@ -18,9 +18,21 @@
 >
 
 {#if $isDarkMode}
-	<Toaster theme="dark" toastOptions={{ style: 'background-color: var(--color-subDark);' }} />
+	<Toaster
+		theme="dark"
+		toastOptions={{
+			style: 'background-color: var(--color-subDark); 	font-family: Michroma, sans-serif; '
+		}}
+		position="top-right"
+	/>
 {:else}
-	<Toaster theme="light" toastOptions={{ style: 'background-color: var(--color-subLight);' }} />
+	<Toaster
+		theme="light"
+		toastOptions={{
+			style: 'background-color: var(--color-subLight); 	font-family: Michroma, sans-serif; '
+		}}
+		position="top-right"
+	/>
 {/if}
 
 <div

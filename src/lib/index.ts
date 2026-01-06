@@ -13,10 +13,10 @@ export { default as Login } from '$lib/components/auth/Login.svelte';
 export { default as Register } from '$lib/components/auth/Register.svelte';
 
 // utils
-export { errorMessageHandler } from './utils/authUtils';
+export { errorMessage } from './utils/authUtils';
 
 // actions
-export { onLogin } from '$lib/actions/authActions';
+export { onLogin, onRegister } from '$lib/actions/authActions';
 
 // types
 export type { UserInterface, LoginParams, RegisterParams } from '$lib/types';
