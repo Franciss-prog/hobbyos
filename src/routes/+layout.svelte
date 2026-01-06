@@ -3,7 +3,6 @@
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
-	import { Footer } from '$lib';
 </script>
 
 <svelte:head>
@@ -21,5 +20,4 @@
   text-dark"
 >
 	{@render children()}
-	<Footer />
 </div>

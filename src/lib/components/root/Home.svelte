@@ -54,7 +54,7 @@
 	<!-- Get Started Button -->
 	<div class="absolute right-6 bottom-6 z-10 md:right-8 md:bottom-8">
 		<a
-			href="/app"
+			href="/auth"
 			class="cursor-pointer rounded-lg border border-dark px-4 py-2 text-sm font-semibold transition hover:bg-dark hover:text-light"
 			>Get started</a
 		>
