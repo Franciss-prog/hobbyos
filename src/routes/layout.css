@@ -7,8 +7,10 @@
 	src: url('../lib/assets/fonts/Stardock.ttf') format('truetype');
 }
 @theme {
-	--color-dark: #171717;
-	--color-light: #faf9f6;
+	--color-light: #dedddb;
+	--color-subLight: #fff5ee;
+	--color-dark: #0d0e0e;
+	--color-subDark: #212122;
 	--font-stardock: 'Stardock';
 }
 body {

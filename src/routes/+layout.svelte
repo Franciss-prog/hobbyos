@@ -1,6 +1,8 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { isDarkMode } from '$lib/stores';
+	import { Toaster } from 'svelte-sonner';
 
 	let { children } = $props();
 </script>
@@ -14,6 +16,12 @@
 		rel="stylesheet"
 	/></svelte:head
 >
+
+{#if $isDarkMode}
+	<Toaster theme="dark" toastOptions={{ style: 'background-color: var(--color-subDark);' }} />
+{:else}
+	<Toaster theme="light" toastOptions={{ style: 'background-color: var(--color-subLight);' }} />
+{/if}
 
 <div
 	class="min-h-screen bg-light
