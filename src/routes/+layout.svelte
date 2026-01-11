@@ -23,7 +23,7 @@
 		toastOptions={{
 			style: 'background-color: var(--color-subDark); 	font-family: Michroma, sans-serif; '
 		}}
-		position="top-right"
+		position="bottom-left"
 	/>
 {:else}
 	<Toaster
@@ -31,7 +31,7 @@
 		toastOptions={{
 			style: 'background-color: var(--color-subLight); 	font-family: Michroma, sans-serif; '
 		}}
-		position="top-right"
+		position="bottom-left"
 	/>
 {/if}
 

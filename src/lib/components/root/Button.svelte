@@ -9,12 +9,15 @@
 	class="group relative flex items-center justify-center overflow-hidden border border-current/20 px-6 py-2 text-sm font-light tracking-wider uppercase transition-all hover:border-current disabled:cursor-not-allowed disabled:opacity-50 {className}"
 	on:click={onClick}
 	disabled={$loading}
+	class:!pointer-events-none={$loading}
 >
-	<!-- sliding background -->
-	<span
-		class="absolute inset-0 w-0 transition-all duration-300 ease-out group-hover:w-full"
-		style="background-color: {isDarkMode ? 'white' : 'black'}"
-	></span>
+	{#if !$loading}
+		<!-- sliding background -->
+		<span
+			class="absolute inset-0 w-0 transition-all duration-300 ease-out group-hover:w-full"
+			style="background-color: {isDarkMode ? 'white' : 'black'}"
+		></span>
+	{/if}
 
 	<!-- container so button width is consistent -->
 	<span

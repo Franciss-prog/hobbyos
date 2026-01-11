@@ -17,6 +17,7 @@ export { errorMessage } from './utils/authUtils';
 
 // actions
 export { onLogin, onRegister } from '$lib/actions/authActions';
+export { onLogout } from '$lib/actions/dashboardActions';
 
 // types
 export type { UserInterface, LoginParams, RegisterParams } from '$lib/types';

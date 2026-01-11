@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onRegister, Button, Input } from '$lib';
+	import { goto } from '$app/navigation';
 	import { isDarkMode } from '$lib/stores';
+	import { toast } from 'svelte-sonner';
 	// user state
 	let name = '';
 	let email = '';
@@ -10,6 +12,16 @@
 		name = '';
 		email = '';
 		password = '';
+	};
+
+	const handleRegister = async () => {
+		await onRegister({ name, email, password }, clear);
+
+		// success message
+		toast.success(`Welcome to HobbyOS! ${name}`);
+
+		// goto dashboard
+		setTimeout(() => goto('/dashboard'), 1201);
 	};
 </script>
 
@@ -26,7 +38,5 @@
 </form>
 <!-- floating container -->
 <div class="fixed right-6 bottom-6 z-50">
-	<Button onClick={() => onRegister({ name, email, password }, clear)} isDarkMode={$isDarkMode}
-		>Register</Button
-	>
+	<Button onClick={handleRegister} isDarkMode={$isDarkMode}>Register</Button>
 </div>
